@@ -16,10 +16,9 @@
           </div>
         </div>
     </div>
-
     <!-- Collect the nav links, forms, and other content for toggling -->
         <% if user_signed_in? %>
-            <div class="collapse navbar-collapse navbar-ext1-collapse">
+            <div class="collapse navbar-collapse navbar-ext-collapse">
               <ul class="nav navbar-nav navbar-right">
                 <li><%= link_to "Dashboard", root_path %></li>
                 <li><%= link_to "Trending", trending_path %></li>
@@ -29,7 +28,7 @@
                   </ul>       
             </div><!-- /.navbar-collapse -->
           <% else %>
-          <div class="collapse navbar-collapse navbar-ext1-collapse">
+          <div class="collapse navbar-collapse navbar-ext-collapse">
               <ul class="nav navbar-nav navbar-right">
                 <li><%= link_to "Login", new_user_session_path %></li>
               </ul>       
