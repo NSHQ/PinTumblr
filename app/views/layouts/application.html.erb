@@ -5,14 +5,18 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  
+  <%# For Mobile Responsiveness %>
+  <meta name="viewport" content="width=device-width, 
+
+  initial-scale=1.0">
+	<%# Navigation Main %>
+  <%= render 'layouts/header' %>
 </head>
 <body>
-<%# Navigation Main %>
-<%= link_to "Dashboard", root_path %>
-<%= link_to "Trending", trending_path %>
-<%= link_to "Messages", messages_path %>
-<%= link_to "Account", settings_path %>
 
+
+<div class="container">
 <%= yield %>
 
 </body>
