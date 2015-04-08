@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
+  devise_for :users
   root "pages#Dashboard"
-
   get "about" => "pages#About"
   get "messages" => "pages#Messages"
   get "settings" => "pages#Settings"
